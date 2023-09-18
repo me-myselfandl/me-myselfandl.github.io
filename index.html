@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Da Sigma</title>
+  <meta name="description" content="">
+  <meta name="author" content="Emre" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <link rel="stylesheet" media="screen" href="demo/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="icon" type="image/png" href="homie.jpg">
+  <body oncontextmenu="return false;">
+  <style>
+    /* Style for the code text */
+    .code-text {
+      font-size: 14px;
+      color: #fff;
+      margin-top: 10px;
+      animation: fade-in 1s ease-in-out;
+    }
+    
+/* Style for the icons container */
+.icons-container {
+  position: absolute;
+  bottom: 60px;
+  left: 25px;
+}
+
+/* Style for individual icons */
+.icons-container .icon {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+/* Style for the follow and share buttons */
+.buttons-wrap {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.buttons-wrap .follow-wrap,
+.buttons-wrap .share-wrap {
+  display: inline-block;
+}
+
+.buttons-wrap .follow,
+.buttons-wrap .share {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-right: 10px;
+  transition: background-color 0.3s;
+}
+
+.buttons-wrap .follow {
+  background-color: #000;
+  border: 2px solid #ffaaaa;
+}
+
+.buttons-wrap .follow:hover {
+  background-color: #be3a50;
+  border: 2px solid #000000;
+}
+
+.buttons-wrap .share {
+  background-color: #ba0e42;
+  border: 2px solid rgb(58, 0, 0);
+}
+
+.buttons-wrap .share:hover {
+  background-color: #7d3c94;
+  border: 2px solid #000;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Rounded rectangle with text -->
+  <div class="rounded-rectangle">
+    <!-- Menu toggle button -->
+    <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+    <!-- Envelope button -->
+    <!-- Picture -->
+    <div class="picture">
+      <img src="homie.jpg" alt="Profile Picture">
+    </div>
+    <p class="𝐄𝐦𝐫𝐞 ❦">𝐄𝐦𝐫𝐞 ❦</p>
+    <p class="he / she / it">he / she / it</p>
+    <!-- Additional text -->
+    <div class="about-text">
+     About
+    </div>
+    <div class="additional-text">
+      Don‘t be shy and text me already
+    </div>
+
+    <!-- Icons container -->
+    <div class="icons-container">
+      <a href="https://www.tiktok.com/@shiroderbre?_t=8fngRsPo8X3&_r=1" class="icon">
+        <i class="fab fa-tiktok"></i>
+      </a>
+      <a href="discord.com/shiroderbre" class="icon">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://t.snapchat.com/7tSPQctT" class="icon">
+        <i class="fab fa-snapchat"></i>
+      </a>
+      <a href="https://www.instagram.com/skrrskrr_emre/" class="icon">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://onlyfans.com/shiroderbre" class="icon">
+        <iconify-icon icon="simple-icons:onlyfans"></iconify-icon>
+      </a>
+    </div>
+    <!-- Code text -->
+    <div class="code-text">
+    | Pianist | Producer | Singer | Rapper | Beatboxer | 
+    </div>
+    <!-- Follow and share buttons -->
+    <div class="buttons-wrap">
+      <div class="follow-wrap">
+        <a href="https://www.instagram.com/skrrskrr_emre/" class="follow">Follow</a>
+      </div>
+      <div class="share-wrap">
+        <a href="https://t.snapchat.com/7tSPQctT" class="share">Contact</a>
+      </div>
+    </div>
+    <!-- Menu list -->
+    <ul class="menu-list" id="menuList">
+      <li><a class="active" href="https://spotify.link/pKzNOnZEcDb" target="_blank" rel="noopener noreferrer">Fav Songs</a></li>
+
+    </ul>
+  </div>
+  
+
+  <!-- particles.js container -->
+  <div id="particles-js"></div>
+
+  <!-- scripts -->
+  <script src="demo/js/particles.js"></script>
+  <script src="demo/js/app.js"></script>
+  <script>
+    function toggleMenu() {
+      var menuList = document.getElementById("menuList");
+      menuList.style.display = menuList.style.display === "none" ? "block" : "none";
+    }
+  </script>
+  <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
+</body>
+</html>
